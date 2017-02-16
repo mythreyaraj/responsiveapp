@@ -1,0 +1,192 @@
+.container{
+	width:100%;
+	max-width: 100%;
+}
+html{
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+body{
+	background-color: #f7f7f7;
+}
+.titlebar{
+	background-color: #fafafa;
+	box-shadow: 0px 1px 5px #888888;
+	width: 100% !important;
+	z-index: 11;
+	position: fixed;
+	display:flex;
+	justify-content:space-between;
+	top:0px;
+	left:0px;
+	color: #3f3f3f;
+}
+.lefttitle{
+	width:50%;
+	display:flex;
+	justify-content:center;
+}
+.righttitle{
+	width:50%;
+	display:flex;
+	justify-content:center;
+}
+#search{
+	width:40px;
+	height:40px;
+	margin:2px 10px 2px 10px;
+}
+#like{
+	width:40px;
+	height:40px;
+	margin:2px 10px 2px 10px;
+}
+#title{
+	font-size: 1.3em;
+	margin:15px 10px 15px 10px;
+	font-weight:400;
+}
+.navicons{
+	position: relative;
+	height: 70%;
+	width: 70%;
+	top:15%;
+	left:15%;
+}
+.content{
+	width:100%;
+	overflow:hidden;
+	margin-top: 50px;
+}
+.clickable:hover{
+	cursor: pointer;
+}
+
+.navbar{
+	width: 100%;
+	background-color: #00bcd4;
+	height: 50px;
+	z-index:10;
+}
+.navbar ul{
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+}
+.navitems{
+	color:#cbecf3;
+	font-size: 0.9em;
+	margin: 0px 10px 0px 10px;
+	padding: 17px 0px 17px 0px;
+	font-weight:400;
+}
+.active{
+	border-bottom: 3px;
+	border-style: solid;
+	border-color: #eeff41;
+	color:white;
+}
+
+.navitems:hover{
+	border-bottom: 3px;
+	border-style: solid;
+	border-color: #eeaa41;
+	color:white;
+	cursor: pointer;
+}
+.pagecontent{
+	margin-top: 20px;
+	z-index: 9;
+	width: 100%;
+	overflow-x:hidden;
+}
+.workshops{
+
+
+}
+.workshop{
+	width: 90%;
+	margin-left:5%;
+	padding:0px 5px 0px 5px;
+	margin-bottom: 5%;
+	position:relative;
+	min-height: 200px;
+}
+.workshop img{
+	width: 100%;
+	height: auto;
+}
+.workshoptitle{
+	width:35%;
+	color:white;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding:10px 10px 10px 10px;
+	font-size: 1em;
+	position: absolute;
+	bottom:75px;
+}
+.sharebar{
+	height: 50px;
+	background-color: white;
+	box-shadow: 0 8px 6px -6px #a0a0a0;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 20px;
+}
+.shareicons img{
+	height: 30px;
+}
+.shareicons{
+	height: 30px;
+	width: 30px;
+	margin: 5px 10px 5px 10px;
+}
+.workshopinfo:hover{
+	cursor: pointer;
+}
+#modal{
+	position: fixed;
+	width: 90%;
+	height: 90%;
+	background-color: white;
+	top:60px;
+	left: 5%;
+	display: none;
+	transition: all .3s ease .15s;
+	box-shadow: 0 0 20px #555555;
+}
+#close{
+	position: fixed;
+	font-size: 2em;
+	background-color: grey;
+	border-radius: 50%;
+	padding: 10px 10px 10px 10px;
+	top:70px;
+	right:6%;
+	color: #f0f0f0;
+	z-index: 15;
+
+
+}
+#close:hover{
+	cursor: pointer;
+}
+#modalcontents{
+	width: 100%;
+	text-align: center;
+}
+#modalcontent{
+	max-width:98%;
+max-height:98%;
+	margin:1%;
+}
+@media only screen and (min-width: 600px) {
+		.workshop{
+			width: 350px;
+		}
+		.workshops{
+			display: flex;
+			align-items: flex-start;
+			flex-wrap: wrap;
+		}
+}
