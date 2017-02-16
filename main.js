@@ -13,7 +13,7 @@
     workshop[i].addEventListener("click",function() {
       console.log(this.childNodes);
       document.getElementById('modalcontent').src=this.childNodes[1].src;
-      document.getElementById('modal').style.display="block";
+      document.getElementById('modal').style.display="flex";
       document.getElementById('close').addEventListener('click',function(){
         document.getElementById('modal').style.display="none";
       });
